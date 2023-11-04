@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0 60px 0;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+#search-field {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: 0 0 6px rgba(211, 19, 19, 0.2);
+  border-radius: 5px;
+  font-size: 18px;
+  color: #333;
+}
+#btn-id {
+  padding: 10px 20px;
+  background-color:#008cba;
+  color: white;
+  border: none;
+  font-size: 18px;
+  box-shadow: 0 0 6px rgba(100, 71, 180, 0.2);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.result-search {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.result-search {
+  margin-bottom: 60px;
+  width: 30%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.result-search img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.result-search:hover img {
+  opacity: 0.8;
+}
+.result-search a {
+  font-size: 20px;
+  text-decoration: none; /* Fixed */
+  color: #333;
+  display: block;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+#showmore-btn {
+  background-color: #173bd8;
+  font-size: 18px;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  display: block;
+  margin: 30px auto;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .result-search {
+    padding: 20px;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .result-search {
+    width: 100%; /* Removed extra "px" */
+  }
+}
